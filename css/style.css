@@ -1,0 +1,929 @@
+body{
+    padding: 0;
+    margin: 0;
+   
+}
+
+.nav{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+  
+}
+.nav .continer{
+    width: 95%;
+   display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  
+}
+.nav .continer .nav-logo  a{
+    text-decoration: none;
+}
+.nav .continer .nav-logo  a h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    color: #212529;
+    font-weight: 700;
+    position: relative;
+    
+}
+.nav .continer .nav-logo  a h2::before{
+    content: "";
+    position: absolute;
+    top: 75%;
+    left: 101%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #E61414;
+}
+.nav .continer .nav-list{
+    display: flex;
+    
+}
+
+.nav .continer .nav-list ul{
+    list-style-type: none;
+}
+.nav .continer .dark{
+    font-size: 25px;
+    color: #212529;
+}
+
+
+
+.nav .continer .nav-list ul li a{
+    text-decoration: none;
+    color: #7F7F90;
+    border-radius: 50%;
+    font-family: "Roboto", sans-serif;
+    font-style: 16px;
+    font-weight: 300;
+    position: relative;
+}
+.nav .continer .nav-list ul li a:hover::before{
+    color: black; 
+    visibility: visible;
+}
+.nav .continer .nav-list ul li a::before{
+    content: "";
+    position: absolute;
+    top: 117%;
+    left: 0%;
+    width: 100%;
+    height: 16%;
+    background-color: #E61414;
+    visibility: hidden;
+}
+
+
+/* home */
+.home {
+    background-color: #EEEEEE;
+    padding: 50px 0px;
+ 
+}
+
+.home .homecon {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.home .homecon .dimo {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.home .homecon .dimo .caption {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.home .homecon .dimo .image {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home .homecon .dimo .caption h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    color: #37373F;
+}
+
+.home .homecon .dimo .caption p {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    color: #4F4F5A;
+}
+
+.home .homecon .dimo .caption .butt a button {
+   width: 35%;
+    
+    
+}
+
+.home .homecon .dimo .caption .butt a .f {
+    border-radius: 0px 100vh 100vh;
+    background-color: #E61414;
+    border: none;
+    color: white;
+    padding: 15px;
+}
+
+.home .homecon .dimo .image img {
+    width: 50%;
+}
+
+.home .homecon .dimo .caption .butt a .s {
+    border: none;
+    background-color: #EEEEEE;
+    color: #37373F;
+}
+.home .homecon .dimo .caption .butt a .f:hover{
+    background-color: #fc1919;
+    cursor: pointer;
+
+}
+
+/* Keyframe animation */
+@keyframes cssAnimation_0 {
+    to {
+        transform:   translateX(30px) translateX(-25px);
+    }
+}
+
+/* Apply animation on hover */
+.home .homecon .dimo .image img:hover {
+    animation: cssAnimation_0 653ms infinite ease-in;
+}
+
+
+
+
+/* chefs */
+.chefs{
+    
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+   
+   
+    
+}
+.chefs .cards{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+    
+}
+.chefs .cards .chefcard{
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 2%;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s;
+    margin: 15px;
+    position: relative;
+    
+   
+    
+}  
+
+.chefs .cards .chefcard img{
+    width: 100%;
+    border-radius: 2%;
+
+}
+.chefs .cards .chefcard .chef-info{
+    padding: 5px;
+}
+.chefs h3 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin-top: 40px;
+}
+
+.chefs h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    color: #37373F;
+}
+ h2 span{
+    color: #cc0000;
+}
+.chefs .cards .chefcard h3{
+    font-size: 18.72px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #212529;
+}
+.chefs .cards .chefcard h4{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    color: #7F7F90;
+}
+.chefs .cards .chefcard p{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #7F7F90;
+    font-style: italic;
+    font-weight: 400;
+    
+}
+.chefs .cards .chefcard .cheficon{
+    position: absolute;
+    background-color: rgba(152, 145, 145, 0.199);
+    right: 20px;
+    top: 100%;
+    width: 5%;
+    padding: 5px;
+    font-size: 25px;  
+    color: #37373f66;
+    transition: all 0.2s;
+    visibility: hidden;
+    
+}
+
+.chefs .cards .chefcard .cheficon a i{
+    color: #37373f3a;
+    width: 100%;
+}
+.chefs .cards .chefcard:hover .cheficon{
+    top: 40px;
+   right: 40px;
+   visibility: visible;
+ 
+}
+.chefs .cards .chefcard .cheficon a i:hover{
+    color: #37373f;
+}
+
+.chefs .cards .chefcard:hover{
+    transform: scale(1.09);
+}
+
+
+
+/* gallary */
+.gallary {
+    margin: auto;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+
+.gallary h3 {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin-top: 40px;
+}
+
+.gallary h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    color: #37373F;
+}
+
+.gallary .grid {
+   
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+}
+
+.gallary .grid img {
+    width: 100%;
+}
+
+.gallary .grid .item {
+    overflow: hidden;
+    position: relative;
+    border: 7px solid #ffffff;
+    
+}
+
+.gallary .grid .item .foodcaption {
+    background-color: #00000096;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    bottom: 0%;
+    transition: all 1s;
+    color: #ffffff;
+}
+
+.gallary .grid .item:hover .foodcaption {
+    top: 0%;
+}
+.gallary .grid .item .foodcaption h3{
+    font-size: 24px;
+    font-weight: 700; 
+}
+.gallary .grid .item .foodcaption p{
+    font-size: 16px;
+    font-weight: 400; 
+}
+
+
+/* contact */
+
+
+.contact {
+    margin: auto;
+    text-align: center;
+}
+
+.contact h3 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin-top: 40px;
+}
+
+.contact h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    color: #37373F;
+}
+
+.contact .map iframe {
+    width: 90%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    background-color: #EEEEEE;
+    width: 45%;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+.icon {
+    background-color: #d92d2b;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.contact .container .box .content {
+    text-align: left;
+}
+
+.content h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.content p {
+    color: #555;
+}
+
+.contact .inputs {
+    margin: auto;
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+
+.contact .inputs form {
+    width: 100%;
+    margin: 10px auto;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .inputs form .txtmail input {
+    width: 45%; 
+    padding: 15px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.contact .inputs form .subarea input,
+.contact .inputs form textarea {
+    width: 93%;
+    margin: 5px 0;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.contact .inputs .but button {
+    border: none;
+    background-color: #CE1212;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+.contact .inputs .but button:hover {
+    background-color: #f61717;
+    cursor: pointer;
+}
+
+
+
+/* fotter */
+.fotter{
+    background-image: url(../images/image.png);
+    background-repeat: no-repeat;
+   background-size: cover;
+    
+    
+}
+.fotter .foterLayer{
+    background-color: rgba(0, 0, 0, 0.79);
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.fotter .continer5{
+  
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.fotter .continer5 .about{
+    width: 25%;
+    
+}
+.fotter .continer5 .about .icon-logo{
+    
+    display: flex;
+   
+}
+.fotter .continer5 .about .icon-logo h2{
+    color: white;
+    position: relative;
+}
+.fotter .continer5 .about .icon-logo h2::before{
+    content: "";
+    position: absolute;
+    top: 75%;
+    left: 101%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #E61414;
+}
+.fotter .continer5 .about .icon-logo img{
+   
+    width: 25px;
+    padding: 10px;
+}
+
+.fotter .continer5 .about .social{
+   
+    text-align: center;
+    padding: 10px;
+}
+.fotter .continer5 .about .social .icons{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.fotter .continer5 .about .social .icons:hover{
+    cursor: pointer;
+}
+.fotter .subscribe{
+   
+    width: 45%;
+    padding: 20px;
+}
+.fotter .subscribe .inputf{
+    width: 100%;
+}
+.fotter .subscribe .inputf form{
+    width: 100%;
+}
+.fotter .subscribe .inputf form input{
+    width: 70%;
+    padding: 10px;
+}
+.fotter .subscribe .inputf form button{
+    width: 25%;
+    background-color: #E61414;
+    padding: 10px;
+    color: white;
+}
+
+.fotter .quik{
+    display: flex;
+    align-content: flex-start;
+    width: 100%;
+   
+
+}
+.fotter .quik ul {
+    list-style: none;
+    width: 45%;
+    
+    
+}
+.fotter .quik ul a{
+    text-decoration: none;
+   
+    
+}
+.fotter .quik .fir a i,li{
+  color: white;
+   margin: 3px 0px;
+ 
+  
+}
+.fotter .quik .sec a i,li{
+    color: white;
+     margin: 3px 0px;
+    
+  }
+
+.fotter .quik ul a li:hover{
+    background-color: rgb(16, 16, 16);
+    transform: translateX(5px);
+}
+.fotter .Getin{
+    width: 25%;
+    
+}
+
+.fotter .Getin .getinfo{
+    width: 90%;
+}
+.fotter .Getin .getinfo p i{
+    color: #E61414;
+    padding: 5px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For screens less than 576px (Extra Small: 1 column) */
+@media (max-width: 575px) {
+    .home .homecon .dimo {
+        flex-direction: column-reverse; 
+        align-items: center;
+    }
+    .home .homecon .dimo .caption,
+    .home .homecon .dimo .image {
+        width: 100%; 
+        justify-content: center;
+        text-align: center;
+    }
+    .home .homecon .dimo .image img {
+        width: 100%; 
+    }
+    .home .homecon .dimo .caption h2 {
+        font-size: 40px; 
+    }
+    .home .homecon .dimo .caption p {
+        font-size: 14px; 
+    }
+
+    .nav .continer {
+        flex-direction: column; 
+        align-items: center; /
+    }
+
+    .nav .continer .nav-list {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 10px; 
+    }
+
+    .nav .continer .nav-list ul {
+        padding: 0; 
+    }
+
+    .nav .continer .nav-list ul li {
+        margin-bottom: 10px; 
+    }
+
+    .nav .continer .nav-logo h2 {
+        font-size: 20px; 
+    }
+
+    .gallary .grid {
+        columns: 1;
+    }
+    .gallary .grid .item .img{
+        width: 100%;
+    }
+
+    .chefs .cards .chefcard{
+        width: 100%;
+
+    }
+    .contact .map{
+        width: 100%;
+    }
+    .contact .container .box{
+        width: 100%;
+    }
+    .contact .inputs form .txtmail input {
+        width: 100%;
+    }
+    .contact .inputs form .subarea input,
+    .contact .inputs form textarea {
+        width: 100%;
+    }
+    .contact .inputs form .but button{
+        width: 100%;
+    }
+    .fotter .continer5 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .fotter .continer5 .about,
+    .fotter .continer5 .subscribe,
+    .fotter .quik,
+    .fotter .Getin {
+        width: 100%; 
+        margin-bottom: 20px; 
+       
+    }
+
+    .fotter .quik ul {
+        width: 100%;
+    }
+
+    .fotter .subscribe .inputf form input {
+        width: 65%; 
+    }
+
+    .fotter .subscribe .inputf form button {
+        width: 30%;
+    }
+    
+       
+    
+}
+
+
+
+/* For screens between 576px and 767px  */
+@media (min-width: 576px) and (max-width: 767px) {
+    .nav .continer {
+        flex-direction: column; 
+        align-items: center; /
+    }
+
+    .nav .continer .nav-list {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 10px; 
+    }
+
+    .nav .continer .nav-list ul {
+        padding: 0; 
+    }
+
+    .nav .continer .nav-list ul li {
+        margin-bottom: 10px; 
+    }
+
+    .nav .continer .nav-logo h2 {
+        font-size: 20px; 
+    }
+
+
+    .home .homecon .dimo {
+        flex-direction: column-reverse; 
+        align-items: center;
+    }
+    .home .homecon .dimo .caption,
+    .home .homecon .dimo .image {
+        width: 100%; 
+        justify-content: center;
+        text-align: center;
+    }
+    .home .homecon .dimo .image img {
+        width: 100%; 
+    }
+    .home .homecon .dimo .caption h2 {
+        font-size: 40px; 
+    }
+    .home .homecon .dimo .caption p {
+        font-size: 14px; 
+    }
+
+    .gallary .grid {
+        columns: 1;
+    }
+    .chefs .cards .chefcard{
+        width: 100%;
+
+    }
+    .contact .container .box{
+        width: 100%;
+    }
+   
+    .contact .inputs form .txtmail input {
+        width: 100%;
+    }
+    .contact .inputs form .subarea input,
+    .contact .inputs form textarea {
+        width: 100%;
+    }
+    .contact .inputs form .but button{
+        width: 100%;
+    }
+
+    .fotter .continer5 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .fotter .continer5 .about,
+    .fotter .continer5 .subscribe,
+    .fotter .quik,
+    .fotter .Getin {
+        width: 100%; 
+        margin-bottom: 20px; 
+       
+    }
+
+    .fotter .quik ul {
+        width: 100%; 
+    }
+
+    .fotter .subscribe .inputf form input {
+        width: 65%; 
+    }
+
+    .fotter .subscribe .inputf form button {
+        width: 30%; 
+    }
+  
+}
+
+
+
+
+/* For screens between 768px and 991px  */
+@media (min-width: 768px) and (max-width: 991px) {
+    .gallary .grid {
+        columns: 2;
+    }
+    .chefs .cards .chefcard{
+        width: 75%;
+
+    }
+    
+    .contact .container .box{
+        width: 75%;
+    }
+    .contact .inputs form .txtmail input {
+        width: 96%;
+    }
+    .contact .inputs form .subarea input,
+    .contact .inputs form textarea {
+        width: 96%;
+    }
+    .contact .inputs form .but button{
+        width: 75%;
+    }
+    .fotter .continer5 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .fotter .continer5 .about,
+    .fotter .continer5 .subscribe,
+    .fotter .quik,
+    .fotter .Getin {
+        width: 100%; 
+        margin-bottom: 20px; 
+        text-align: center; 
+    }
+
+    .fotter .quik ul {
+        width: 100%; 
+    }
+
+    .fotter .subscribe .inputf form input {
+        width: 65%; 
+    }
+
+    .fotter .subscribe .inputf form button {
+        width: 30%; 
+    }
+
+    
+}
+
+
+
+
+/* For screens between 992px and 1199px  */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .gallary .grid {
+        columns: 3;
+    }
+    .chefs .cards .chefcard{
+        width: 50%;
+
+    }
+   
+    .contact .container .box{
+        width: 50%;
+    }
+    
+    .contact .inputs form .txtmail input {
+        width: 45%;
+    }
+    .contact .inputs form .subarea input,
+    .contact .inputs form textarea {
+        width: 90%;
+    }
+    .contact .inputs form .but button{
+        width: 40%;
+    }
+}
+
+
+
+
+
+/* For screens 1200px and above  */
+@media (min-width: 1200px) {
+    .gallary .grid {
+        columns: 3;
+    }
+    .chefs .cards .chefcard{
+        width: 30%;
+
+    }
+    .contact .inputs form .txtmail input {
+        width: 45%;
+    }
+    .contact .inputs form .subarea input,
+    .contact .inputs form textarea {
+        width: 90%;
+    }
+    .contact .inputs form .but button{
+        width: 20%;
+    }
+}
+
+
